@@ -33,8 +33,15 @@ public class App {
         }
 
         System.out.println("");
-        //Write your code below here
-
+        System.out.println("Number?");
+        int input = Integer.valueOf(scanner.nextLine());
+        int sum = 0;
+        for (int number: values){
+            if (number < input){
+                sum += number;
+            }
+        }
+        System.out.println("The sum is: " + sum);
 
     }
 }
